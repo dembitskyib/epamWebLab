@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+    <style>
+        div{
+            margin:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" action="success.html" id="form">
+        <div>
+            <label for="title">Title</label>
+            <input type="text" id="title" maxlength="25" required>
+        </div>
+        <div>
+        </div>
+        <div>
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" required>
+        </div>
+        <div>
+            <label for="issue">Issue</label>
+            <select id="issue">
+                <option>personal </option>
+                <option>business </option>
+            </select>
+        </div>
+        <div>
+            <label for="callBack">Call me back</label>
+            <input type="checkbox" id="callBack" checked>
+        </div>
+        <div>
+            <label for="desciption">Desciption</label>
+            <input type="text" id="desciption" required>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>
