@@ -1,0 +1,172 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+header { 
+    padding: 10px 0px;
+    position: fixed;
+    background: white;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px #eaebec solid;
+    color: #70777e;
+}
+
+header h3{
+    padding-left: 10px;
+    margin: 0px;
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+.nav-ref{
+    color: #70777e;
+    margin: 5px;
+    font-size: 0.6em;
+    text-decoration: none;
+}
+
+.nav-ref:last-child{
+    padding: 4px 6px;;
+    color:#4b88fc;
+    border: #4b88fc 1px solid;
+    border-radius: 3px;
+}
+
+main{
+    padding: 50px 0px;
+}
+
+.pricing-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.pricing-section h2{
+    color:#424549;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+.pricing-section p{
+    color: #70777e;
+    font-size: 0.8em;
+}
+
+.pricing-section p, h2 {
+    margin: 3px;
+    align-self: center;
+    width: 35%;
+}
+
+.pricing-columns-section{
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 15%;
+    margin: 10px;
+    border: #e5e5e5 1px solid;
+    border-radius: 3px;
+    padding-bottom: 5px;
+}
+
+.pricing-column h3{
+    width: 100%;
+    font-size: 0.9em;
+    background-color: #f7f7f7;
+    border-bottom: #e5e5e5 1px solid;
+    border-radius: 2px 2px 0px 0px;
+    text-align: center;
+    margin: 0px;
+    padding: 7px 0px;
+}
+
+.pricing-column div{
+    font-size: 0.7em;
+    padding: 1px;
+}
+
+.pricing-column .price-div{
+    padding: 10px 0px;
+}
+
+.pricing-column .pricing-button{
+    text-align: center;
+    padding: 7px 0px;
+    width: 80%;
+    border: #4b88fc 1px solid;
+    border-radius: 3px;
+    margin: 15px;
+}
+
+.pricing-column:nth-child(n+2) .pricing-button{
+    color: white;
+    background: #4b88fc;
+}
+
+.pricing-column:first-child .pricing-button a{
+    text-decoration: none;
+    color:#4b88fc;
+}
+
+.pricing-column:nth-child(n+2) .pricing-button  a{
+    text-decoration: none;
+    color: white;
+}
+
+.price{
+    padding: 10px;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.month{
+    color: #70777e;
+    font-size: 1.3em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 0.6em;
+}
+
+img{
+    width: 15px;
+}
+
+.footer-section {
+    padding: 30px 50px 20px 50px;
+    border-top: #eaebec 1px solid;
+}
+
+.footer-section:first-child{
+    padding: 30px 50px 50px 0px;
+    text-align: left;
+}
+
+footer h3{
+    margin-bottom: 7px;
+}
+
+footer ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #84878a;
+    margin: 2px 0px;
+}
