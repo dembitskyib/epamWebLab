@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>To do list</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h1>MY TO DO LIST</h1>
+        <div class="userInput">
+            <input type="text" id="userTask" required>
+            <span>
+                <button class="addButton" onclick="addTask()">Add</button>
+            </span>
+        </div>
+        <ul id="taskList">
+            <li>
+                <input onclick="checkTask(this)" type="checkbox" class="checkTask" />
+                <span class="task">Task </span>
+                <span class="buttonSpan">
+                    <button class="deleteButton" onclick="deleteTask(this)">Remove</button>
+                </span>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>
