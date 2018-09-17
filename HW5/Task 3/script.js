@@ -20,7 +20,7 @@ function createTask(value) {
     let spanButton = document.createElement("span");
     spanButton.className = "buttonSpan";
     deleteButton.className = "deleteButton";
-    deleteButton.appendChild(document.createTextNode("Remove"));
+    deleteButton.appendChild(document.createTextNode("REMOVE"));
     spanButton.appendChild(deleteButton);
     taskNode.appendChild(checkBox);
     taskNode.appendChild(spanTask);
@@ -39,15 +39,17 @@ function deleteTask(button) {
 function checkTask(checkBox) {
     let listElement = checkBox.parentNode;
     let textSpan = listElement.getElementsByClassName("task")[0];
+    let deleteButton = listElement.getElementsByClassName("deleteButton")[0];
     if (textSpan.className == "task") {
         textSpan.className = "complited task";
+        deleteButton.className = "complited deleteButton";
     } else {
         textSpan.className = "task";
+        deleteButton.className = "deleteButton";
     }
 }
 
-function addEventsCheckAndDelete(listElement){
-    console.log(listElement);
+function addEventsCheckAndDelete(listElement) {
     listElement.getElementsByClassName("deleteButton")[0].addEventListener('click', function () {
         deleteTask(this);
     });
@@ -111,3 +113,10 @@ function addEventsDragAndDrop(el) {
     el.addEventListener('dragend', dragEnd, false);
 }
 
+var inputField = document.getElementById("userTask");
+inputField.addEventListener("keyup", function (event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementsByClassName("addButton")[0].click();
+    }
+});
