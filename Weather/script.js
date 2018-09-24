@@ -142,3 +142,4 @@ function addCity() {
 
 setInterval(renewWeather, 1000 * 60 * 5);
 renewWeather();
+setTimeout(function () { document.getElementsByClassName("renew-button")[0].click() }, 1000);
